@@ -1,0 +1,92 @@
+.jacket-specific {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:1400px) {
+        flex-direction: row;    
+    }
+}
+
+.jacket-specific-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.jacket-specific-image { 
+    display: none;
+
+    @media (min-width:1400px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.jacket-specific-image img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.jacket-specific-image-large img {
+    max-width: 300px;
+    justify-self: center;
+
+    @media (min-width:680px) {
+        max-width: 500px;
+    }
+
+    @media (min-width:1400px) {
+}
+}
+
+.jacket-specific-info-brand,
+.jacket-specific-info-color {
+    display: flex;
+    flex-direction: column;
+}
+
+.jacket-specific-color img {
+    max-width: 150px;
+}
+
+.jacket-specific-size-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.jacket-specific-size-options {
+    display: flex;
+    flex-direction: row; 
+}
+
+.size-btn {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn-add-to-cart {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    max-width: 150px;
+}
+
+.jacket-specific-related-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (min-width:680px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    @media (min-width:1400px) {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,18 @@
+.index-fall-collection,
+.index-gear {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width:680px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    @media (min-width:1400px) {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+}
